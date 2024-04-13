@@ -1,0 +1,43 @@
+<link rel = "stylesheet" href= "css/main.css ">
+<back><a href = "index.html">Back to Home Page</a></back>
+<h1> Image Gallery </h1>
+
+<main> 
+    <div id="gallery-img" class="container">
+        <div class="row">
+            <div class="col-sm">
+                <img src="images/gymmaxing.jpg" class="gallery-img"/>
+            </div>
+            <div class="col-sm">
+                <img src="images/chad.jfif" class="gallery-img"/>
+            </div>
+            <div class="col-sm">
+                <img src="images/gym.jpg" class="gallery-img"/>
+            </div>
+            <div class="col-sm">
+                <img src="images/henrycavill.jpg" class="gallery-img"/>
+            </div>
+            <div class="col-sm">
+                <img src="images/scarlett.jpg" class="gallery-img"/>
+            </div>
+            <div class="col-sm">
+                <img src="images/madelyncline.png" class="gallery-img"/>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let images = document.querySelectorAll('.gallery-img');
+        images.forEach(image => {
+            image.addEventListener('mouseover', highlight);
+            image.addEventListener('mouseout', delight);
+        });
+        function highlight() {
+            this.style.backgroundColor = 'grey';
+        }
+        function delight() {
+            this.style.backgroundColor = '';
+        }
+    </script>
+
+</main>
