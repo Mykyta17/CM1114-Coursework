@@ -4,7 +4,9 @@ body{
     font-weight: 300;
     background-color: #222;
 }
-
+.column{
+    float: left;
+}
 .container{
     width: 80%;
     margin: 0 auto;
@@ -15,7 +17,6 @@ nav{
 nav ul{
     margin: 0;
     padding: 0 ;
-    list-style: none;
 }
 nav li{
     display: inline-block;
@@ -33,7 +34,7 @@ h1,nav{
 }
 h2{
     font-style: italic;
-    margin-right: 500px;
+    margin-right: 100px;
 }
 h2,h3,p{
     color: white;
@@ -79,9 +80,30 @@ footer{
     width: 30%;
     padding: 30px;
 }
+
 #img-gallery{
     padding-top: 10px;
 }
 #img-gallery .row{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+.gallery-img[src = "images/madelyncline.png"]{
+    height: 30%;
+}
+table{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+table td, table th{
+    border: #f0f0f0;
+    border-radius: 2px;
+}
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+table tr:hover{
+    background-color: grey;
+}
+table th{
+    background-color: black;
+    color: white;
 }
