@@ -1,17 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
 <link rel = "stylesheet" href= "css/main.css ">
-<back><a href = "index.html">Back to Home Page</a></back>
+<title> Contact Us </title>
+<div class = "container">
+    <nav> 
+   <ul>
+       <li> <a href = "index.html">Home Page</a></li>
+       <li><a href = "img_gallery.html">      Image Gallery </a></li>
+       <li> <a href = "event_calendar.html">    Event Calendar  </a></li>
+       <li> <a href = "current_members.html">    Member List </a></li>
+   </ul>
+</nav>
+</div>
+<h1> Contact Us </h1>
+<main>
+<form>
+    <fieldset>
+        <legend> Contact us using the below form. </legend>
 
-<button type = "button" onclick="alert('You have been logged in!')"> Login </button>
-<script>
-    
-    var counter = 2;
-    function login(){
-        if(counter % 2 == 0){
-            alert("You have been logged in!")
-        }
-        else {
-            alert("You have been logget out!");
-        }
-        counter +=1
-    }
-</script>
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.."> <br/>
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."> <br/>
+        <label for="message">Your message: </label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:70px"></textarea>
+        <button type="button"
+        onclick="alert('Form has been sent successfully!')">Submit</button>
+    </fieldset>
+</form>   
+</main>
+</html>

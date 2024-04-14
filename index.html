@@ -1,25 +1,27 @@
-<html>
-   <header> 
-    <title> Looksmaxing society </title>
-    <link rel = "stylesheet" href= "css/main.css ">
-    
-         <div class = "container">
-             <nav> 
-            <ul>
-                <li> <a href = "index.html">Home Page</a></li>
-                <li><a href = "img_gallery.html">      Image Gallery </a></li>
-                <li> <a href = "event_calendar.html">    Event Calendar  </a></li>
-                <li> <a href = "current_members.html">    Member List </a></li>
-                <li> <a href = "contact_us.html">     Contact moggers  </a></li>
-            </ul>
-        </nav>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<link rel = "stylesheet" href= "css/main.css ">
+<title> Looksmaxing Society </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   </header>
-    <body>
-        
-        <h1> Looksmaxing Society </h1>
+<div class = "container">
+    <nav> 
+   <ul>
+       <li> <a href = "index.html">Home Page</a></li>
+       <li><a href = "img_gallery.html">      Image Gallery </a></li>
+       <li> <a href = "event_calendar.html">    Event Calendar  </a></li>
+       <li> <a href = "current_members.html">    Member List </a></li>
+       <li> <a href = "contact_us.html">     Contact moggers  </a></li>
+   </ul>
+</nav>
+</div>
+<h1>  Looksmaxing Society  
+    <label for="name" style ="font-size: 18px;">User name:</label>
+    <input type="text" name="name" value=""/> 
+    <button type="button" onclick="login()">Login</button> </h1>
         <main>
+            
             <h2> 
                  Have you ever dreamt of becoming a model but your genetics were not as good as you wanted? <br>
                  In Looksmaxing Society you will be able to boost your attractiveness far above average and meet a lot of new people or even find new friends with the similar goals as you! 
@@ -28,27 +30,25 @@
             <h4> <a href = "mewing.html">Mewing sessions</a> </h4>
             <h5> <a href  ="mogging.html">Mogging battles</a> </h5>
             <h6> <a href = "gymmaxing.html">Gymmaxing sessions</a> </h6>
-            <aside>  </aside>
+            
             <div id="img-gallery" class="container">
                 <div class="row">
                 <div class="col-sm">
-                <img src="images/chico.jpg" class="gallery-img"/>
+                <img src="images/chico.jpg" alt="Chico" class="gallery-img"/>
                 </div>
                 <div class="col-sm">
-                <img src="images/chris.jpg" class="gallery-img"/>
+                <img src="images/chris.jpg" alt="Chris"  class="gallery-img"/>
                 </div>
                 <div class="col-sm">
-                <img src="images/gigachad.png" class="gallery-img"/>
+                <img src="images/gigachad.png"  alt="Chad"  class="gallery-img"/>
                 </div>
                 </div>
                 </div>
+                <script src = "scripts/login.js"></script>
+                <aside>  </aside>
         </main>
-   
-       
-       
-    
         <footer> 
-            <p>  Copyright Mykyta Kakaranza </p>
+            <p>  Copyright Mykyta Kakaranza 1st year of Computer Science</p>
         </footer>
     </body>
 </html>

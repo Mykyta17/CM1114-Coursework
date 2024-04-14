@@ -1,6 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
 <link rel = "stylesheet" href= "css/main.css ">
-<back><a href = "index.html">Back to Home Page</a></back>
+<title> Calendar </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class = "container">
+    <nav> 
+   <ul>
+    <li> <a href = "index.html">Home Page</a></li>
+    <li><a href = "img_gallery.html">      Image Gallery </a></li>
+    <li> <a href = "current_members.html">    Member List </a></li>
+    <li> <a href = "contact_us.html">     Contact moggers  </a></li>
+   </ul>
+</nav>
+</div>
 <h1> Timetable of the Society </h1>
+<main>
+
 <table>
     <tr>
         <th></th>
@@ -14,7 +30,7 @@
     </tr>
     <tr>
         <th> W1</th>
-        <td> Society Meeting </td>
+        <td> Group Meeting and the Plan Discussion </td>
         <td> Gymmaxing session</td>
         <td> Rest Day</td>
         <td> Gymmaxing Session </td>
@@ -24,52 +40,70 @@
     </tr>
     <tr>
         <th> W2</th>
-        <td> test</td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> tester </td>
-        <td> test</td>
+        <td> Society Meeting</td>
+        <td> Mogging Training</td>
+        <td> Gymmaxing Session</td>
+        <td> Rest Day</td>
+        <td> Mewing Training</td>
+        <td> Gymmaxing </td>
+        <td> First Mogging Competition</td>
     </tr>
     <tr> 
         <th> W3</th>
-        <td> test</td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> tester </td>
-        <td> test</td>
+        <td> Society Meeting</td>
+        <td> Gymmaxing</td>
+        <td> Personal Meeting with Mentors</td>
+        <td> Mewing Training </td>
+        <td> Gymmaxing Session</td>
+        <td> Rest Day </td>
+        <td> Practice of Mogging Battles</td>
     </tr>
     <tr>
         <th> W4</th>
-        <td> test</td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> tester </td>
-        <td> test</td>
+        <td> Society Meeting</td>
+        <td> Prepare for the Mewing Exam</td>
+        <td> Gymmaxing Session</td>
+        <td> Material Revision with Mentors </td>
+        <td> Mogging Practice</td>
+        <td> No classes/Preparation for exams </td>
+        <td>No classes/Preparation for exams </td>
     </tr>
     <tr>
         <th> W5</th>
-        <td> test</td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> tester </td>
-        <td> test</td>
+        <td> Meeting with Mentors about Exams</td>
+        <td> Question Discussion </td>
+        <td> Mewing Exam</td>
+        <td> Mogging Battle</td>
+        <td> Analysis of Mogging Battles and Preparation for Gymmaxing Exam</td>
+        <td> Gymmaxing Exam </td>
+        <td> Graduation and Greetings from the Mentors </td>
     </tr>
-    <tr>
-        <th> W6</th>
-        <td> test</td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> tester </td>
-        <td> test</td>
-    </tr>
-</table>
+</table> 
+<p> Want to recommend an event? Tell us below!</p>   
+<form id="event">
+    <label for="event_title"> Event Title: </label>
+    <input type="text" id="event_title" name="event_title"><br>
+    <label for="event_date"> Event Date: </label>
+    <input type="date" id="event_date" name="event_date"><br>
+    <button type="button" onclick="submit_event()">Submit Event</button>
+</form>
+
+<script>
+    function submit_event(){
+        var title = document.forms["event"]["event_title"].value;
+        var date = document.forms["event"]["event_date"].value;
+        if (title == ""){
+            alert("An event must have a title!");
+        }
+        else {
+            if (date.length == 0){
+                alert("An event must have a date!");
+            }
+            else {
+                alert("Event submitted! The society will contact you soon!");
+            }
+        }
+    }
+</script>
+</main>
+</html>
