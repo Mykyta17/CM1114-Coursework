@@ -1,10 +1,14 @@
+<!--The mandatory part of the page-->
 <!DOCTYPE html>
 <html lang="en">
+<!--Link to the css file to edit it using the css-->
 <link rel = "stylesheet" href= "css/main.css ">
+<!-- Title of the webpage-->
 <title> Gallery </title>
+<!--Meta information-->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!-- Created a navigational panel -->
 <div class = "container">
     <nav> 
    <ul>
@@ -15,9 +19,10 @@
    </ul>
 </nav>
 </div>
+<!--Name of the webpage-->
 <h1>  Image Gallery </h1>
 <main> 
-    
+<!--The collection of 6 images from the image folder which have the same size and the same distance between each other-->
     <div id="gallery-img" class="container">
         <div class="row">
             <div class="col-sm">
@@ -40,7 +45,7 @@
             </div>
         </div>
     </div>
-    
+<!-- The script which highlights the image by creating the grey border color when the mouse is over the image -->
     <script>
         let images = document.querySelectorAll('.gallery-img');
         images.forEach(image => {
@@ -48,12 +53,15 @@
             image.addEventListener('mouseout', delight);
         });
         function highlight() {
-            this.style.backgroundColor = 'grey';
+            this.style.backgroundColor = 'grey'; 
         }
         function delight() {
             this.style.backgroundColor = '';
         }
     </script>
-
+<!-- Footer which always stays on the bottom of the page -->
+<footer> 
+    <p>  Copyright Mykyta Kakaranza 1st year of Computer Science</p>
+</footer>
 </main>    
 </html>

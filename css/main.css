@@ -1,70 +1,85 @@
-
+/* Sets basic information of all the text in the <body>*/
 body{
     margin: 0;
     font-weight: 300;
     background-color: #222;
 }
+/* Moves all the column to the left size */
 .column{
     float: left;
 }
+/* Sets up the size of the container*/
 .container{
     width: 80%;
     margin: 0 auto;
 }
+/* Moves the navigational panel to the right side*/
 nav{
     float: right;
 }
+/* Removes the margin and padding specifically from the <nav ul> */
 nav ul{
     margin: 0;
     padding: 0 ;
 }
+/* The location and the display type of the nav panel */
 nav li{
     display: inline-block;
     margin-left: 70px;
     padding-top: 25px;
 }
+/* Sets up design of the text on the navigational panel*/
 nav a{
     color: #444;
     text-decoration: none;
     text-transform: uppercase;
 
 }
+/* Creates the white line for the navigational panel and additonaly moved all the text on the nav panel to the top a little bit*/
 h1,nav{
     background-color: aliceblue;
     margin-top: -5px;
 }
+/* Font style of the text and the change of it's original location*/
 h2{
     font-style: italic;
     margin-right: 100px;
 }
+/* Color of the text */
 h2,h3,p{
     color: white;
 }
+/* Change of the h1 design and padding */
 h1{
     font-family: 'Times New Roman', Times, serif;
     font-size: 36pt;
     padding-left: 350px;
 }
+/* Change of the font and it's size  */
 h3{
     font-family: 'Times New Roman', Times, serif;
     font-size: 30pt;
 }
+/* Change of the font size*/
 p{
     font-size: 10pt;
 }
+/* Change of text colot and size of it*/
 main a{
     font-size: 12pt;
     color: white;
 }
+/* Change of the font , border radius and all the stuff location*/
 main{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 10px;
     margin-left: 100px;
 }
+/* Moves the aside part to the right*/
 aside{
-    background-color: white;
-    border-radius: 10px;
+    float: right;
 }
+/* All the locatiob and the design of the footer*/
 footer{
     position: fixed;
     bottom: 0;
@@ -75,27 +90,36 @@ footer{
     border-radius: 10px;
     
 }
+/* Change of the images to the left side and their size  */
 .gallery-img{
     float: left;
     width: 30%;
     padding: 30px;
 }
-
+/* Location moves to the top */
 #img-gallery{
     padding-top: 10px;
 }
+/* All the images in a single row have specific location*/
 #img-gallery .row{
     margin-bottom: 20px;
     margin-right: 0px;
 }
+/* Changes the size of the specific image*/
 .gallery-img[src = "images/madelyncline.png"]{
     height: 400px;
 }
+/* Changes the size of the specific image*/
+.mogwarts[src = "images/mogwarts.png"]{
+    height: 10px;
+}
+/* Sets the font type and the size of the table and collapses the borders of the table */
 table{
     width: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-collapse: collapse;
 }
+/* Sets the border parameters , text position and the text size of the table */
 table td, table th{
     border: #f0f0f0;
     border-radius: 2px;
@@ -106,21 +130,34 @@ table td, table th{
     padding: 5px;
     border: 1px solid black;
 }
+/* Changes background color of specific columns of the table */
 table tr{
     background-color: #f2f2f2;
 }
+/* Changed the columns color while mouse over it */
 table tr:hover{
     background-color: grey;
 }
+/* Changes background color of specific columns of the table */
 table th{
     background-color: #f2f2f2;
     
 }
-
-
+/* Sets the size and location parameters of the image*/
+a img{
+    border-radius: 50%;
+    height: 50px;
+    float: left;
+}
+/* Changed the color to white*/
 form{
     color: white;
 }
+/* Moves the text area to the left */
 textarea{
     margin-left: 5px;
+}
+/* Alligns the TikTok video in the middle of the screen */
+blockquote{
+    vertical-align: middle;
 }

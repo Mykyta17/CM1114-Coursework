@@ -1,10 +1,14 @@
+<!--The mandatory part of the page-->
 <!DOCTYPE html>
 <html lang="en">
+<!--Link to the css file to edit it using the css-->
 <link rel = "stylesheet" href= "css/main.css ">
+<!-- Title of the webpage-->
 <title> Looksmaxing Society </title>
+<!--Meta information-->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!-- Created a navigational panel -->
 <div class = "container">
     <nav> 
    <ul>
@@ -16,21 +20,25 @@
    </ul>
 </nav>
 </div>
-<h1>  Looksmaxing Society  
-    <label for="name" style ="font-size: 18px;">User name:</label>
-    <input type="text" name="name" value=""/> 
-    <button type="button" onclick="login()">Login</button> </h1>
+<!-- Created a logo for the website, Name of the Society and the Login function with the script used from the login.js file-->
+<h1> <img src="images/logo.jpg" alt="Logo" style="height: 60px;"> Looksmaxing Society  
+<label id="name" style ="font-size: 18px;">User name:</label>
+<input type="text" name="name" value=""/> 
+<button type="button" onclick="login()">Login</button>
+ </h1>
         <main>
-            
+            <!-- Description of the main goal of the Society-->
             <h2> 
                  Have you ever dreamt of becoming a model but your genetics were not as good as you wanted? <br>
                  In Looksmaxing Society you will be able to boost your attractiveness far above average and meet a lot of new people or even find new friends with the similar goals as you! 
             </h2>
+            <!-- Name of the Looksmaxing Coursed and a link to the webpages with the content about these courses-->
             <h3> Looksmaxing Courses </h3>
             <h4> <a href = "mewing.html">Mewing sessions</a> </h4>
             <h5> <a href  ="mogging.html">Mogging battles</a> </h5>
             <h6> <a href = "gymmaxing.html">Gymmaxing sessions</a> </h6>
-            
+            <h6> <a href="reference.html"> Reference Page</a></h6>
+            <!-- Image Gallery containing some of the images related to Looksmaxing with a gallery-img class which is used for other webpages-->
             <div id="img-gallery" class="container">
                 <div class="row">
                 <div class="col-sm">
@@ -43,10 +51,17 @@
                 <img src="images/gigachad.png"  alt="Chad"  class="gallery-img"/>
                 </div>
                 </div>
-                </div>
+                <!-- The link which makes the login.js file usable on the index.html page-->
                 <script src = "scripts/login.js"></script>
-                <aside>  </aside>
+                <!-- Created the Latest news Panel which currently shows the information about an upcoming Mogwarts Academy-->
+                <img src = "images/mogwarts.png" alt="Mogwarts" style="height: 800px;"/>
+                <aside>  
+                    <h3> Latest news </h3>
+                    <h2> Our idea of creating a school for everyone who wants to do Looksmaxing is almost ready! </h2><br>
+                    <h2> Mogwarts will soon open ! Get ready to start your mogging adventure !</h2>
+                </aside>
         </main>
+        <!-- Footer which always stays on the bottom of the page -->
         <footer> 
             <p>  Copyright Mykyta Kakaranza 1st year of Computer Science</p>
         </footer>

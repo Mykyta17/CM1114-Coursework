@@ -1,9 +1,14 @@
+<!--The mandatory part of the page-->
 <!DOCTYPE html>
 <html lang="en">
+<!--Link to the css file to edit it using the css-->
 <link rel = "stylesheet" href= "css/main.css ">
+<!-- Title of the webpage-->
 <title> Calendar </title>
+<!--Meta information-->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Created a navigational panel -->
 <div class = "container">
     <nav> 
    <ul>
@@ -14,11 +19,13 @@
    </ul>
 </nav>
 </div>
+<!--Name of the webpage-->
 <h1> Timetable of the Society </h1>
 <main>
-
+<!-- Created the timetable which contains the schedule of Looksmaxing Society-->
 <table>
     <tr>
+        <!-- Created the names of the days of the week for the table-->
         <th></th>
         <th> MON </th>
         <th> TUE</th>
@@ -29,6 +36,7 @@
         <th> SUN</th>
     </tr>
     <tr>
+        <!-- Created Week1 row-->
         <th> W1</th>
         <td> Group Meeting and the Plan Discussion </td>
         <td> Gymmaxing session</td>
@@ -39,6 +47,7 @@
         <td> First Mogging Training</td>
     </tr>
     <tr>
+        <!-- Created Week2 row-->
         <th> W2</th>
         <td> Society Meeting</td>
         <td> Mogging Training</td>
@@ -49,6 +58,7 @@
         <td> First Mogging Competition</td>
     </tr>
     <tr> 
+        <!-- Created Week3 row-->
         <th> W3</th>
         <td> Society Meeting</td>
         <td> Gymmaxing</td>
@@ -59,6 +69,7 @@
         <td> Practice of Mogging Battles</td>
     </tr>
     <tr>
+        <!-- Created Week4 row-->
         <th> W4</th>
         <td> Society Meeting</td>
         <td> Prepare for the Mewing Exam</td>
@@ -69,6 +80,7 @@
         <td>No classes/Preparation for exams </td>
     </tr>
     <tr>
+        <!-- Created Week5 row-->
         <th> W5</th>
         <td> Meeting with Mentors about Exams</td>
         <td> Question Discussion </td>
@@ -79,6 +91,7 @@
         <td> Graduation and Greetings from the Mentors </td>
     </tr>
 </table> 
+<!-- The short form to propose any ideas to the Society with the Submit button to send the message to the Society moderator-->
 <p> Want to recommend an event? Tell us below!</p>   
 <form id="event">
     <label for="event_title"> Event Title: </label>
@@ -87,7 +100,7 @@
     <input type="date" id="event_date" name="event_date"><br>
     <button type="button" onclick="submit_event()">Submit Event</button>
 </form>
-
+<!-- The script which detects the value of the event title and date and if some of them are blank the error will pop up and the message will tell you to enter the value missing -->
 <script>
     function submit_event(){
         var title = document.forms["event"]["event_title"].value;
@@ -105,5 +118,9 @@
         }
     }
 </script>
+<!-- Footer which always stays on the bottom of the page -->
+<footer> 
+            <p>  Copyright Mykyta Kakaranza 1st year of Computer Science</p>
+        </footer>
 </main>
 </html>
